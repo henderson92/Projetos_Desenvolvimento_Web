@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "Site Portfolio",
+			"path": ".."
+		},
+		{
+			"name": "Primeiro Site",
+			"path": "../../../../Downloads/exercicio01/Primeiro Site"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Site Portfolio"
+	}
+}

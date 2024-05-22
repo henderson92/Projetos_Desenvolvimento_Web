@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Formulario FreeCodeCamp Survey Form</title>
+</head>
+<body> 
+    <h1>FreeCodeCamp Survey Form</h1>
+    <div class="square">
+        <div class="conteiner">
+            <form id="survey-form">
+                <label for="name" id="name-label">Nome:</label>
+                <input type="text" id="name" name="name" placeholder="Escreve seu nome" required>
+                
+                <label for="email" id="email-label">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Escreve seu email" required>
+    
+                <label for="number" id="number-label">Telefone:</label>
+                <input type="number" id="number" name="number" min="1" max="100" placeholder="Tell" required>
+                <fieldset>
+                    <legend>Idade:</legend>
+                    <input type="checkbox" id="under-18" name="age" value="trabalho">Menor de 18<br/>
+                    <input type="checkbox" id="18-30" name="age" value="trabalho">18-30<br/>
+                    <input type="checkbox" id="30-45" name="age" value="30-45">30-45<br/>
+                    <input type="checkbox" id="45-60" name="age" value="45-60">45-60<br/>
+                    
+                    <span class="error"></span>
+                </fieldset>
+    
+                <fieldset>
+                    <legend>Por que voce gostaria de aprender a Programar</legend>
+
+                    <input type="checkbox" id="trabalho" name="recommend" value="trabalho">Trabalho<br/>
+                    <input type="checkbox" id="hobby" name="recommend" value="hobby">Hobby<br/>
+                    <input type="checkbox" id="Curiosidade" name="recommend" value="curiosidade">Curiosidade<br/>
+                    <input type="checkbox" id="outro" name="recommend" value="outro">Outro<br/>
+                    <span class="error"></span>
+                </fieldset>
+    
+                <fieldset>
+                    <legend>Qual opção melhor descreve sua função atual ?</legend>
+                    <select name="occupation" id="occupation">
+                        <option value="student">Estudante</option>
+                        <option value="job">Trabalhador</option>
+                        <option value="unemployed">Desempregado</option>
+                        <option value="other">Outro</option>
+                    </select>
+                </fieldset>
+    
+                
+                </fieldset>
+    
+                <fieldset>
+                    <legend>Voce recomendaria FreeCodeCamp para um amigo</legend>
+                     <input type="checkbox" id="yes" name="recommend" value="yes">Sim<br/>
+                     <input type="checkbox" id="no" name="recommend" value="yes">Não<br/>
+                     <label for="no">Motivo</label>
+                     <textarea name="comments" id="comments" cols="50" rows="" placeholder="Deixe seu comentario"></textarea>
+                 </fieldset>
+    
+                 <fieldset>
+                    <legend>Qual a sua opinião sobre a qualidade do conteudo do FreeCodeCamp</legend>
+                     <input type="checkbox" id="excelent" name="quality" value="excelent">Excelente<br/>
+                     <input type="checkbox" name="quality" id="excelent" value="excelent">Bom<br/>                    
+                     <input type="checkbox" name="quality" id="good" value="good">Regular<br/>                    
+                     <input type="checkbox" name="quality" id="regular" value="regular">Ruim<br/>
+                 </fieldset>
+    
+                 <fieldset>
+                    <legend>Qual a sua Limguagem de Programação Favorita</legend>
+                    <input type="checkbox" id="excelent" name="quality" value="excelent">Python<br/>
+                    <input type="checkbox" name="quality" id="excelent" value="excelent">JavaScript<br/>
+                    <input type="checkbox" name="quality" id="good" value="good">Java<br/>
+                    <input type="checkbox" name="quality" id="regular" value="regular">C++<br/>
+                    <input type="checkbox" name="quality" id="regular" value="regular">C#<br/>
+                    <input type="checkbox" name="quality" id="regular" value="regular">Outro<br/>
+                 </fieldset>
+                 
+                <fieldset>
+                    <legend>Comentarios:</legend>
+                    <textarea name="comments" id="comments" cols="50" rows="5" placeholder="Deixe seu comentario"></textarea>
+                </fieldset>
+            </div>
+            <button type="submit">Enviar</button>
+        </div>
+    </div>
+</body> 
+</html>

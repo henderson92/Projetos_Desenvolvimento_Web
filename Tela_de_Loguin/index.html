@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login Form</title>
+    <style>
+        .login {
+            font-family: Arial, sans-serif;
+            width: 300px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 100px;
+        }
+        .login__form {
+            width: 100%;
+        }
+        .login__input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .login__submit-button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .login__submit-button:hover {
+            background-color: #45a049;
+        }
+        .login__remember-checkbox {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .login__remember-checkbox-label {
+            margin-left: 5px;
+        }
+        .login__links {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login">
+        <div class="login__greeting">
+            <strong>Bem vindo</strong>
+            <div class="login__title">Novo Login</div>
+        </div>
+        <form class="login__form">
+            <input type="text" id="username" class="login__input" placeholder="Usuário" required>
+            <input type="password" id="password" class="login__input" placeholder="Senha" required>
+            <div class="login__remember-checkbox">
+                <input type="checkbox" id="remember-me" class="login__remember-checkbox-input">
+                <label for="remember-me" class="login__remember-checkbox-label">Lembrar</label>
+            </div>
+            <button type="submit" class="login__submit-button">Entrar</button>
+        </form>
+        <div class="login__links">
+            <span>Criar conta</span>
+            <span><a href="#">Esqueceu a senha?</a></span>
+        </div>
+    </div>
+</body>
+</html>

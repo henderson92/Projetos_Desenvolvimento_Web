@@ -1,0 +1,84 @@
+.canvas {
+    /*Conteiner primario */
+    width: 500px;
+    /*Largura do conteiner */
+    height: 600px;
+    /*Altura do conteiner */
+    background-color: #4d0f00;
+    /*Cor de fundo do conteiner */
+    overflow: hidden;
+    /*Ocultar conteudo que ultrapassa o conteiner */
+    filter: blur(2px);
+    /*Aplicar efeito de desfoque no conteiner */
+}
+
+.frame {
+    /*Conteiner secundario */
+    border: 50px solid black;
+    /*Borda do conteiner */
+    width: 500px;
+    /*Largura do conteiner */
+    padding: 50px;
+    /*Espaçamento interno do conteiner */
+    margin: 20px auto;
+    /*Margem do conteiner */
+}
+
+.one {
+    /*Conteiner terciario */
+    width: 425px;
+    /*Largura do conteiner */
+    height: 150px;
+    /*Altura do conteiner */
+    background-color: #efb762;
+    /*Cor de fundo do conteiner */
+    margin: 20px auto;
+    /*Margem do conteiner */
+    box-shadow: 0 0 3px 3px #efb762;
+    /*Sombra do conteiner */
+    border-radius: 9px;
+    /*Arredondar as bordas do conteiner */
+    transform: rotate(-0.6deg);
+    /*Rotacionar o conteiner em 0.6 graus  para a esquerda */
+}
+
+.two {
+    /*Conteiner quaternario */
+    width: 475px;
+    /*Largura do conteiner */
+    height: 200px;
+    /*Altura do conteiner */
+    background-color: #8f0401;
+    /*Cor de fundo do conteiner */
+    margin: 0 auto 20px;
+    /*Margem do conteiner */
+    box-shadow: 0 0 3px 3px #8f0401;
+    /*Sombra do conteiner */
+    border-radius: 8px 10px;
+    /*Arredondar as bordas do conteiner */
+    transform: rotate(0.4deg);
+}
+
+.one,
+.two {
+    filter: blur(1px);
+    /*Aplicar efeito de desfoque no conteiner */
+}
+
+.three {
+    /*Conteiner quinario */
+    width: 91%;
+    /*Largura do conteiner em porcentagem  relativa ao container pai*/
+    height: 28%;
+    /*Altura do conteiner em porcentagem  relativa ao container pai*/
+    background-color: #b20403;
+    margin: 0 auto 20px;
+    /*Margem superior(0), Margem Horizontal(auto) Magem Inferior(20px). do conteiner */
+    filter: blur(2px);
+    /*Aplicar efeito de desfoque no conteiner */
+    box-shadow: 0 0 5px 5px #b20403;
+    /*Sombra do conteiner */
+    border-radius: 30px 25px 60px 12px;
+    /*Arredondar as bordas do conteiner - 30px canto superio - 25px canto inferior direito - 60px canto inferior esquerdo e 12px canto superior direito */
+    transform: rotate(-0.2deg); /*Rotacionar o conteiner em 0.2 graus  para a direita */
+}
